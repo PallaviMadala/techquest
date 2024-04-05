@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MetaMaskButton } from "@metamask/sdk-react-ui";
-
+import img1 from "../assets/logo.png"
 const Topbar = () => {
   const [isMetamaskConnected, setIsMetamaskConnected] = useState(false);
   const [account, setAccount] = useState(null);
@@ -39,7 +39,7 @@ const Topbar = () => {
           to="/"
           className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
         >
-          <img src="logo.jpg" width="37px"></img>
+          <img src={img1} width="37px"></img>
           <span className="ml-3 text-xl">Medical DataExchange</span>
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
